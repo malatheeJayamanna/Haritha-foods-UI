@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Place an order | Haritha Foods Product</title>
+<meta name="description" content="Place a bulk, private label or export order.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/images/logo.jpg">
+</head>
+<body>
+<header class="site-header"><div class="bar">
+<a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="Haritha Foods Product logo" width="52" height="52"><span>Haritha Foods Product</span></a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+<nav id="nav" class="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="private-label.html">Private label</a><a href="export.html">Export</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="order.html" aria-current="page">Order</a><span class="auth" id="auth"></span></nav>
+</div></header>
+<main>
+
+<section class="section"><div class="container">
+<div id="order-gate" hidden class="center" style="max-width:720px;margin:0 auto"><h1>Place an order</h1><p>Please log in or register to place an order.</p>
+<div class="notice"><h3>Ordering is for registered customers</h3><div class="actions" style="justify-content:center"><a class="btn" href="register.html?next=order.html">Register</a><a class="btn-outline" href="login.html?next=order.html">Log in</a></div></div></div>
+<div id="order-app" hidden class="grid lg" style="align-items:start">
+<form id="order-form" class="form" novalidate><h2 style="font-size:1.75rem;margin:0">New order</h2>
+<div id="items"></div><div class="error" id="items-error" aria-live="polite"></div>
+<button type="button" id="add-item" class="linkbtn">+ Add another product</button>
+<div><label for="o-type">Order type</label><select id="o-type"><option>Bulk</option><option>Private label</option><option>Export</option></select></div>
+<div><label for="o-addr">Delivery address</label><textarea id="o-addr" name="o-addr" required></textarea><div class="error" aria-live="polite"></div></div><div><label for="o-note">Notes (optional)</label><textarea id="o-note" name="o-note"></textarea><div class="error" aria-live="polite"></div></div>
+<button class="btn" type="submit">Place order</button><div class="status" role="status"></div></form>
+<div><h2>My orders</h2><p>Your recent orders appear here.</p><ul id="order-list" class="orders"></ul></div></div></div></section>
+</main>
+<footer class="site-footer"><div class="container">
+<div class="foot">
+<a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="Haritha Foods Product logo" width="72" height="72"><span>Haritha Foods Product<br><span class="tagline">Taste Of The Nature</span></span></a>
+<div class="social"><a href="#" data-whatsapp>WhatsApp</a><a href="#">TikTok</a><a href="#">Facebook</a><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Google Business</a></div>
+</div>
+<div class="copy">&copy; <span id="year">2026</span> Haritha Foods Product. All rights reserved.</div>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>

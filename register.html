@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register | Haritha Foods Product</title>
+<meta name="description" content="Create an account to place orders.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/images/logo.jpg">
+</head>
+<body>
+<header class="site-header"><div class="bar">
+<a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="Haritha Foods Product logo" width="52" height="52"><span>Haritha Foods Product</span></a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+<nav id="nav" class="nav" aria-label="Main"><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="private-label.html">Private label</a><a href="export.html">Export</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="order.html">Order</a><span class="auth" id="auth"></span></nav>
+</div></header>
+<main>
+
+<section class="section"><div class="container grid lg" style="align-items:start"><div><h1>Create your account</h1><p>Register once to place orders online.</p>
+<ul class="steps ticks"><li><span><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7l3.5 3.5L12 4" fill="none" stroke="#fff" stroke-width="2"/></svg></span>Place bulk, private label and export orders</li><li><span><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7l3.5 3.5L12 4" fill="none" stroke="#fff" stroke-width="2"/></svg></span>See your past orders in one place</li><li><span><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7l3.5 3.5L12 4" fill="none" stroke="#fff" stroke-width="2"/></svg></span>Faster replies to your quotes</li></ul></div>
+<form class="form" data-auth="register" novalidate><h2 style="font-size:1.75rem;margin:0">Register</h2>
+<div><label for="r-name">Full name</label><input id="r-name" name="r-name" type="text" required><div class="error" aria-live="polite"></div></div><div><label for="r-email">Email</label><input id="r-email" name="r-email" type="email" required><div class="error" aria-live="polite"></div></div><div><label for="r-phone">Phone</label><input id="r-phone" name="r-phone" type="tel" required><div class="error" aria-live="polite"></div></div><div><label for="r-company">Company (optional)</label><input id="r-company" name="r-company" type="text"><div class="error" aria-live="polite"></div></div><div><label for="r-pass">Password (8+ characters)</label><input id="r-pass" name="r-pass" type="password" required autocomplete="new-password"><div class="error" aria-live="polite"></div></div><div><label for="r-pass2">Confirm password</label><input id="r-pass2" name="r-pass2" type="password" required autocomplete="new-password"><div class="error" aria-live="polite"></div></div>
+<div class="form-error" role="alert"></div><button class="btn" type="submit">Create account</button>
+<p class="center" style="margin:0">Already have an account? <a class="inline" href="login.html" data-keep-search>Log in</a></p></form></div></section>
+</main>
+<footer class="site-footer"><div class="container">
+<div class="foot">
+<a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="Haritha Foods Product logo" width="72" height="72"><span>Haritha Foods Product<br><span class="tagline">Taste Of The Nature</span></span></a>
+<div class="social"><a href="#" data-whatsapp>WhatsApp</a><a href="#">TikTok</a><a href="#">Facebook</a><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Google Business</a></div>
+</div>
+<div class="copy">&copy; <span id="year">2026</span> Haritha Foods Product. All rights reserved.</div>
+</div></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
